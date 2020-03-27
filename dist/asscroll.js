@@ -1,3 +1,4 @@
+var ASScroll =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -2679,5 +2680,5 @@ module.exports = __webpack_require__(/*! C:\laragon\www\asscroll\demo\index.scss
 
 /***/ })
 
-/******/ });
+/******/ })["default"];
 //# sourceMappingURL=asscroll.js.map

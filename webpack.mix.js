@@ -3,6 +3,11 @@ const mix = require('laravel-mix');
 mix
 
 .webpackConfig({
+    output: {
+      library: "ASScroll",
+      libraryExport: "default",
+      libraryTarget: "var"
+    },
     module: {
       rules: [
         {
@@ -13,7 +18,7 @@ mix
         },
       ]
     }
-  })
+})
 
 // Set up the JS entry point
 .js('src/index.js', 'dist/asscroll.js')
