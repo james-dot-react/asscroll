@@ -7,23 +7,13 @@ mix
       library: "ASScroll",
       libraryTarget: 'umd',
       umdNamedDefine: true
-    },
-    module: {
-      rules: [
-        {
-            enforce: 'pre',
-            exclude: /node_modules/,
-            loader: 'eslint-loader',
-            test: /\.js$/
-        },
-      ]
     }
 })
 
 // Set up the JS entry point
 .js('src/index.js', 'dist/asscroll.js')
-.js('demo/index.js', 'demo/build.js')
-.sass('demo/index.scss', 'demo/build.css')
+// .js('demo/index.js', 'demo/build.js')
+// .sass('demo/index.scss', 'demo/build.css')
 
 if (!mix.inProduction()) {
     // Include separate source maps in development builds.
@@ -33,5 +23,5 @@ if (!mix.inProduction()) {
     mix.sourceMaps();
 } else {
     // In production
-    mix.babel('dist/asscroll.js', 'dist/asscroll.js')
+    // mix.babel('dist/asscroll.js', 'dist/asscroll.js')
 }
