@@ -1,5 +1,14 @@
-var ASScroll =
-/******/ (function(modules) { // webpackBootstrap
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory();
+	else if(typeof define === 'function' && define.amd)
+		define("ASScroll", [], factory);
+	else if(typeof exports === 'object')
+		exports["ASScroll"] = factory();
+	else
+		root["ASScroll"] = factory();
+})(window, function() {
+return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -2680,5 +2689,6 @@ module.exports = __webpack_require__(/*! C:\laragon\www\asscroll\demo\index.scss
 
 /***/ })
 
-/******/ })["default"];
+/******/ });
+});
 //# sourceMappingURL=asscroll.js.map

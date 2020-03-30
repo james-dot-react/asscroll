@@ -5,8 +5,8 @@ mix
 .webpackConfig({
     output: {
       library: "ASScroll",
-      libraryExport: "default",
-      libraryTarget: "var"
+      libraryTarget: 'umd',
+      umdNamedDefine: true
     },
     module: {
       rules: [
